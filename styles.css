@@ -14,8 +14,8 @@ header {
 }
 
 .banner {
-  width: 10%;
-  height: 10px;
+  width: 20%;
+  height: 50px;
   object-fit: cover;
   margin-top: 10px;
 }
