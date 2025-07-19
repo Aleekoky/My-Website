@@ -19,7 +19,7 @@
   <a href="#">Contact</a>
 </nav>
 
-<!-- Modal -->
+<!-- About Modal -->
 <div id="aboutModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -27,6 +27,15 @@
     <p>
       We specialize in solar system design and installation, website development, data analysis, CCTV setup, and hands-on training. Our mission is to deliver smart, secure, and sustainable tech solutions across Nigeria and beyond.
     </p>
+  </div>
+</div>
+  <!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close contact-close">&times;</span>
+    <h3>Contact Us</h3>
+    <p>📞 Phone: +234 8064164344</p>
+    <p>📧 Email: aliyubiniyaminu75@gmail.com</p>
   </div>
 </div>
 
@@ -59,23 +68,41 @@
   </div>
   </footer>
 <script>
-  const modal = document.getElementById("aboutModal");
-  const btn = document.getElementById("aboutBtn");
-  const span = document.querySelector(".close");
+  // About modal
+  const aboutModal = document.getElementById("aboutModal");
+  const aboutBtn = document.getElementById("aboutBtn");
+  const aboutClose = document.querySelector(".about-close");
 
-  btn.onclick = (e) => {
-    e.preventDefault(); // prevent jumping
-    modal.style.display = "block";
+  aboutBtn.onclick = (e) => {
+    e.preventDefault();
+    aboutModal.style.display = "block";
   };
 
-  span.onclick = () => modal.style.display = "none";
+  aboutClose.onclick = () => {
+    aboutModal.style.display = "none";
+  };
 
+  // Contact modal
+  const contactModal = document.getElementById("contactModal");
+  const contactBtn = document.getElementById("contactBtn");
+  const contactClose = document.querySelector(".contact-close");
+
+  contactBtn.onclick = (e) => {
+    e.preventDefault();
+    contactModal.style.display = "block";
+  };
+
+  contactClose.onclick = () => {
+    contactModal.style.display = "none";
+  };
+
+  // Close any modal when clicking outside
   window.onclick = (e) => {
-    if (e.target == modal) {
-      modal.style.display = "none";
-    }
+    if (e.target == aboutModal) aboutModal.style.display = "none";
+    if (e.target == contactModal) contactModal.style.display = "none";
   };
 </script>
+
 
 </body>
 </html>
