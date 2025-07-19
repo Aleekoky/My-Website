@@ -1,74 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Bright Grid Solution and Smart Digital Innovation </title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Bright Grid Solution and Smart Digital Innovation
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
   <header>
-    <h1>Welcome to Bright Grid Solution and Smart Digital Innovation</h1>
-    <img src="banner.jpg" alt="Banner Image" class="banner">
+   <h1>
+    Welcome to Bright Grid Solution and Smart Digital Innovation
+   </h1>
+   <img alt="Banner Image" class="banner" src="banner.jpg"/>
   </header>
-
   <nav>
-  <a href="#">Home</a>
-  <a href="#" id="aboutBtn">About</a>
-  <a href="#">Services</a>
-  <a href="#">Contact</a>
-</nav>
-
-<!-- About Modal -->
-<div id="aboutModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h3>BrightGrid Tech Solutions</h3>
-    <p>
-      We specialize in solar system design and installation, website development, data analysis, CCTV setup, and hands-on training. Our mission is to deliver smart, secure, and sustainable tech solutions across Nigeria and beyond.
-    </p>
-  </div>
-</div>
-  <!-- Contact Modal -->
-<div id="contactModal" class="modal">
-  <div class="modal-content">
-    <span class="close contact-close">&times;</span>
-    <h3>Contact Us</h3>
-    <p>📞 Phone: +234 8064164344</p>
-    <p>📧 Email: aliyubiniyaminu75@gmail.com</p>
-  </div>
-</div>
-
+   <a href="#">
+    Home
+   </a>
+   <a href="#" id="aboutBtn">
+    About
+   </a>
+   <a href="#">
+    Services
+   </a>
+   <a href="#" id="contactBtn">
+    Contact
+   </a>
   </nav>
-  <section class="intro">
-    <h2>About Me</h2>
-    <img src="profile.jpg" alt="Aliyu's Photo" class="profile">
-    <p> <em> <b> Engr. Aliyu Biniyaminu (CEO)</b></em>  <P>
-    <p> Hello! I'm Aliyu. I specialized in Electrical and Electronic Engineering, with a diversity skills in Web development Networking and Data Analysis.</p>
-     </section>
-  <section class="services">
-    <h3>Our Services</h3>
-    <ul>
-      <li>Solar System Design and Installation </li>
-      <li>Networking Design and System Administration</li>
-      <li>CCT Installation and configuration </li>
-      <li>Data Analysis </li>
-      <li>Web Design</li>
-      <li>Training and Tutorials</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p> &copy; 2025 Aliyu. All rights reserved.</p>
-    <div class="social-links">
-    <a href="https://facebook.com/aliyu.biniyaminu" target="_blank">Facebook</a> |
-    <a href="https://twitter.com/aliyu55708917" target="_blank">Twitter</a> |
-    <a href="https://linkedin.com/in/aliyu-biniyaminu-1b15a135a/" target="_blank">LinkedIn</a> |
-    <a href="https://wa.me/2348064164344" target="_blank">WhatsApp</a>
+  <div class="modal" id="aboutModal">
+   <div class="modal-content">
+    <span class="close">
+     ×
+    </span>
+    <h3>
+     BrightGrid Tech Solutions
+    </h3>
+    <p>
+     We specialize in solar system design and installation, website development, data analysis, CCTV setup, and hands-on training. Our mission is to deliver smart, secure, and sustainable tech solutions across Nigeria and beyond.
+    </p>
+   </div>
   </div>
+  <div class="modal" id="contactModal">
+   <div class="modal-content">
+    <span class="close contact-close">
+     ×
+    </span>
+    <h3>
+     Contact Us
+    </h3>
+    <p>
+     📞 Phone: +234 8064164344
+    </p>
+    <p>
+     📧 Email: aliyubiniyaminu75@gmail.com
+    </p>
+   </div>
+  </div>
+  <!-- About Modal -->
+  <!-- Contact Modal -->
+  <section class="intro">
+   <h2>
+    About Me
+   </h2>
+   <img alt="Aliyu's Photo" class="profile" src="profile.jpg"/>
+   <p>
+    <em>
+     <b>
+      Engr. Aliyu Biniyaminu (CEO)
+     </b>
+    </em>
+    <p>
+     <p>
+      Hello! I'm Aliyu. I specialized in Electrical and Electronic Engineering, with a diversity skills in Web development Networking and Data Analysis.
+     </p>
+    </p>
+   </p>
+  </section>
+  <section class="services">
+   <h3>
+    Our Services
+   </h3>
+   <ul>
+    <li>
+     Solar System Design and Installation
+    </li>
+    <li>
+     Networking Design and System Administration
+    </li>
+    <li>
+     CCT Installation and configuration
+    </li>
+    <li>
+     Data Analysis
+    </li>
+    <li>
+     Web Design
+    </li>
+    <li>
+     Training and Tutorials
+    </li>
+   </ul>
+  </section>
+  <footer>
+   <p>
+    © 2025 Aliyu. All rights reserved.
+   </p>
+   <div class="social-links">
+    <a href="https://facebook.com/aliyu.biniyaminu" target="_blank">
+     Facebook
+    </a>
+    |
+    <a href="https://twitter.com/aliyu55708917" target="_blank">
+     Twitter
+    </a>
+    |
+    <a href="https://linkedin.com/in/aliyu-biniyaminu-1b15a135a/" target="_blank">
+     LinkedIn
+    </a>
+    |
+    <a href="https://wa.me/2348064164344" target="_blank">
+     WhatsApp
+    </a>
+   </div>
   </footer>
-<script>
-  // About modal
+  <script>
+   // About modal
   const aboutModal = document.getElementById("aboutModal");
   const aboutBtn = document.getElementById("aboutBtn");
   const aboutClose = document.querySelector(".about-close");
@@ -101,8 +158,6 @@
     if (e.target == aboutModal) aboutModal.style.display = "none";
     if (e.target == contactModal) contactModal.style.display = "none";
   };
-</script>
-
-
-</body>
+  </script>
+ </body>
 </html>
