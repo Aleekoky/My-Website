@@ -125,39 +125,38 @@
    </div>
   </footer>
   <script>
-   // About modal
+   document.addEventListener("DOMContentLoaded", function () {
   const aboutModal = document.getElementById("aboutModal");
   const aboutBtn = document.getElementById("aboutBtn");
-  const aboutClose = document.querySelector(".about-close");
+  const aboutClose = document.querySelector(".close");
 
-  aboutBtn.onclick = (e) => {
+  aboutBtn.onclick = function (e) {
     e.preventDefault();
     aboutModal.style.display = "block";
   };
 
-  aboutClose.onclick = () => {
+  aboutClose.onclick = function () {
     aboutModal.style.display = "none";
   };
 
-  // Contact modal
   const contactModal = document.getElementById("contactModal");
   const contactBtn = document.getElementById("contactBtn");
   const contactClose = document.querySelector(".contact-close");
 
-  contactBtn.onclick = (e) => {
+  contactBtn.onclick = function (e) {
     e.preventDefault();
     contactModal.style.display = "block";
   };
 
-  contactClose.onclick = () => {
+  contactClose.onclick = function () {
     contactModal.style.display = "none";
   };
 
-  // Close any modal when clicking outside
-  window.onclick = (e) => {
+  window.onclick = function (e) {
     if (e.target == aboutModal) aboutModal.style.display = "none";
     if (e.target == contactModal) contactModal.style.display = "none";
   };
+});
   </script>
  </body>
 </html>
