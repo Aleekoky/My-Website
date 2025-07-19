@@ -163,6 +163,22 @@
     if (e.target == aboutModal) aboutModal.style.display = "none";
     if (e.target == contactModal) contactModal.style.display = "none";
   };
+    const servicesModal = document.getElementById("servicesModal");
+const servicesBtn = document.getElementById("servicesBtn");
+const servicesClose = document.querySelector(".services-close");
+
+servicesBtn.onclick = function (e) {
+  e.preventDefault();
+  servicesModal.style.display = "block";
+};
+
+servicesClose.onclick = function () {
+  servicesModal.style.display = "none";
+};
+
+// Include in the outside-click close check:
+if (e.target == servicesModal) servicesModal.style.display = "none";
+
 });
   </script>
  </body>
