@@ -14,9 +14,9 @@ header {
 }
 
 .banner {
-  width: 50%;
-  height: 200px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
   margin-top: 10px;
 }
 
