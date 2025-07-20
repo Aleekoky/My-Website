@@ -115,4 +115,7 @@ footer {
   cursor: pointer;
   color: #333;
 }
+* {
+  box-sizing: border-box;
+}
 
