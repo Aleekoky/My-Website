@@ -47,6 +47,10 @@ section {
   border-radius: 50%;
   margin-top: 10px;
 }
+  .core-founder {
+  text-align: center;
+  margin-top: 20px;
+}
 
 ul {
   list-style: none;
