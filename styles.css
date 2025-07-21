@@ -118,4 +118,40 @@ footer {
 * {
   box-sizing: border-box;
 }
+/* Make containers responsive */
+.container, .wrapper, .banner {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
+/* Prevent content from floating only left */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Optional: center your content */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content, .about-us {
+    padding: 10px;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
